@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu e Galeria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Menu expansivo</h1>
+    
+    <div class="menu">
+        <button id="menuBotao" onclick="menuExpande()">menu</button>
+            <div id="menuConteudo">
+                
+                <ul class="menuLista">
+                    <li>item do menu</li>
+                    <li>item do menu</li>
+                </ul>
+
+            </div>
+    </div>
+
+
+    <div class="galeria">
+        <img class="foto"  src="/imgs/download.jpeg" onclick="abrirModal(this.src)" alt="" srcset="">
+        <img class="foto"  src="/imgs/img2.jpeg"     onclick="abrirModal(this.src)" alt="" srcset="">
+        <img class="foto"  src="/imgs/image3.jpeg"   onclick="abrirModal(this.src)" alt="" srcset="">
+    </div>
+
+    <div id="modal" onclick="fecharModal()">
+        <img id="modalImg" alt="">
+    </div>
+
+
+    <form action="" id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="fulano de tal" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="fulano@email.com" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="telefone" name="telefone" id="telefone" placeholder="00 00000-0000" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

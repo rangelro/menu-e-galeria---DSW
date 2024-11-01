@@ -1,0 +1,46 @@
+
+.menu{
+    margin: 0;
+}
+#menuConteudo{
+    background-color: gray;
+    display: none;
+    max-width: 200px;
+}
+
+#menuConteudo.visivel{
+    display: block;
+}
+
+.menuLista{
+    list-style-type: none;
+}
+
+.menuLista ul li{
+    padding: 10px;
+}
+
+.foto{
+    width: 100px;
+}
+
+#modal{
+    display: none;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+}
+
+#modalImg{
+    margin:auto; 
+    display:block; 
+
+    position:absolute;
+}
+
